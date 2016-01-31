@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<title>7C Home</title>
+<link rel="stylesheet" href="style-mobile.css"  type="text/css" data-skrollr-stylesheet />
+<!-- <link rel="stylesheet" media='screen and (max-width: 880px)' href="style-mobile.css" type="text/css" data-skrollr-stylesheet>  -->
+<link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:700,400' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="prefixfree.min.js"></script>
+</head>
+
+<body id="skrollr-body" >
+	<header>
+			<div id="navbar"><img src="images/logo.png">
+			<ul>
+				<li>WORK</li> 
+				<li>ABOUT</li> 
+				<li>BLOG</li> 
+				<li>CONTACT US</li> 
+			</ul>
+		</div>
+		<h1 align="center">WE ARE A DIGITAL<br>
+		PRODUCT AGENCY</h1>
+		<div style="width:44%; margin-left:auto; margin-right:auto;">
+		<p style="margin-top:-8%">We design and develop mobile and web apps.<br>
+		Based in Bengaluru, India.
+		</p></div>
+	</header>
+<section id="phonesection" >
+<img src="images/p1.png" class="top">
+<img src="images/gears.png" class="middle" data-400="opacity:0; margin-top:-20%;" data-700="opacity:1; margin-top:5%;">
+<img src="images/p2.png" class="bottom" data-0="opacity:1; margin-top:-10%;" data-500="opacity:0; margin-top:10%;">
+</section>	
+
+
+<script>
+var scrollBehaviour = [
+     {id: 'line1', startPct: 18, endPct: 28},
+     {id: 'line2', startPct: 31, endPct: 37},
+     {id: 'line3', startPct: 37, endPct: 53},
+     {id: 'line4', startPct: 53, endPct: 83},
+	 {id: 'line5', startPct: 84, endPct: 98}
+  ];
+
+$(document).ready(function() {
+
+  // On a scroll event - execute function
+  $(window).scroll(scrollEventHandler);
+
+  // Call the scroll event handler once at the start to initialise the dash offsets
+  scrollEventHandler();
+
+});
+
+
+
+function scrollEventHandler()
+{
+  // Calculate how far down the page the user is 
+  var percentOfScroll = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 100);
+
+  // For each element that is getting drawn...
+  for (var i=0; i<scrollBehaviour.length; i++)
+  {
+    var data = scrollBehaviour[i];
+    var elem = document.getElementById(data.id);
+
+    // Get the length of this elements path
+    var dashLen = calcPathLength(elem);
+
+    // Calculate where the current scroll position falls relative to our path
+    var fractionThroughThisElem = (percentOfScroll - data.startPct) / (data.endPct - data.startPct);
+    // Clamp the fraction value to within this path (0 .. 1)
+    fractionThroughThisElem = Math.max(fractionThroughThisElem, 0);
+    fractionThroughThisElem = Math.min(fractionThroughThisElem, 1);
+
+    var dashOffset = dashLen * (1 - fractionThroughThisElem);
+
+    elem.setAttribute("stroke-dasharray", dashLen);
+    elem.setAttribute("stroke-dashoffset", dashOffset);
+  }
+}
+
+
+
+function calcPathLength(elem)
+{
+  if (elem.getTotalLength)
+  {
+    // It's a path
+    return elem.getTotalLength();
+  }
+  else if (elem.tagName === "rect")
+  {
+    // Handle rect elements: perimeter length = w + w + h + h
+    return (elem.width.baseVal.value + elem.height.baseVal.value) * 2;
+  }
+  else if (elem.tagName === "circle")
+  {
+    // Handle circle elements: perimeter length = 2 * r * PI
+    return elem.r.baseVal.value * 2 * Math.PI;
+  }
+  else if (elem.tagName === "line")
+  {
+    // Handle line elements: use pythagoras' theorem
+    var dx = elem.x2.baseVal.value - elem.x1.baseVal.value;
+    var dy = elem.y2.baseVal.value - elem.y1.baseVal.value;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+  // If you use other elem types, you will have to add support for them here.
+}
+</script>
+
+<div class="wrapper" >
+
+
+<svg version="1.1" id="svg1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="516px" height="740px" viewBox="0 0 516 740" enable-background="new 0 0 516 740" xml:space="preserve">
+<g>
+	<path fill="none" id="line1" stroke="#a8a8a8" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0,11" d="
+		M392.391,73.289l87.743-51.377c18.994-11.101,34.366-2.183,34.366,19.817v210.542c0,22-15.489,48.878-34.627,59.729L350.38,385.375
+		c-19.138,10.851-34.88,37.729-34.88,59.729v74.626c0,22-15.486,48.883-34.621,59.739L1.078,738.271"/>
+</g>
+</svg>
+
+<svg version="1.1" id="svg2"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="414px" height="383px" viewBox="0 0 414 383" enable-background="new 0 0 414 383" xml:space="preserve">
+<g>
+	<path fill="none" id="line2" stroke="#a8a8a8"  stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0,11" d="
+		M2.5,240.585L377.197,20.392c18.965-11.15,34.661-2.273,34.661,19.727V243.66c0,22-15.798,48.946-34.889,59.88l-138.541,79.298"/>
+</g>
+</svg>
+
+
+<svg  version="1.1" id="svg3"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="592px" height="858px" viewBox="0 0 592 858" enable-background="new 0 0 592 858" xml:space="preserve">
+<g>
+	<path  id="line3"   fill="none" stroke="#a8a8a8"  stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0,11" d="
+		M2.54,2.421v530.969c0,22,15.825,49.01,34.871,60.022l52.863,30.495c19.046,11.012,19.038,28.913-0.092,39.778l-29.806,16.948
+		c-19.129,10.866-20.408,30.613-2.86,43.882l144.11,108.967c17.548,13.27,47.005,14.322,65.455,2.339l224.506-145.808
+		c18.45-11.983,47.88-10.899,65.399,2.409l34.748,26.594"/>
+</g>
+</svg>
+
+<svg version="1.1" id="svg4"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="528px" height="706px" viewBox="0 0 528 706" enable-background="new 0 0 528 706" xml:space="preserve">
+<g>
+	<path fill="none" id="line4"  stroke="#a8a8a8"  stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0,11" d="
+		M524,2.031v361.958c0,22-15.371,48.943-34.464,59.874L0.124,703.979"/>
+</g>
+</svg>
+
+<svg version="1.1" id="svg5" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="149px" height="564px" viewBox="0 0 149 564" enable-background="new 0 0 149 564" xml:space="preserve">
+<g>
+	<path fill="none" id="line5" stroke="#a8a8a8"  stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0,11" d="
+		M8.002,2.412v267.119c0,22,15.431,49.01,34.477,60.022l52.667,30.495c19.045,11.012,18.833,28.724-0.425,39.359l-59.386,32.786
+		c-19.258,10.636-20.637,30.154-3.052,43.374l114.573,86.023"/>
+</g>
+</svg>
+
+
+
+<div id="set1"><img src="images/b1.png"></div>
+
+<div class="content" id="t1" ><h2>WE ARE STARTUP FRIENDLY!</h2>
+		<p>Lorem ipsum dolor sit amet,<br>
+	consectetuer adipiscing elit, sed<br>
+	diam nonummy nibh euismod tincidunt<br>
+	ut laoreet dolore magna aliquam<br>
+	erat volutpat. </p>
+		</div>
+		
+<div id="set2"><div id="sp3" class="sprite1"></div><img src="images/b2.png"></div>
+
+<div class="content" id="t2" ><h2>WE CONCEPTUALIZE</h2>
+	<p>Lorem ipsum dolor sit amet,<br>
+consectetuer adipiscing elit, sed<br>
+diam nonummy nibh euismod tincidunt<br>
+ut laoreet dolore magna aliquam<br>
+erat volutpat. </p></div>
+		
+<div id="sp2" class="sprite" ></div>
+
+<div class="content" id="t3" ><h2>WE DESIGN THE BEST<br>
+LOOKING APPS</h2>
+	<p>Lorem ipsum dolor sit amet,<br>
+consectetuer adipiscing elit, sed<br>
+diam nonummy nibh euismod tincidunt<br>
+ut laoreet dolore magna aliquam<br>
+erat volutpat. </p></div>
+
+<div id="sp1" class="sprite" ></div>
+
+<div class="content" id="t4" ><h2>THE BEST DEVELOPERS IN TOWN<br>
+IN ONE PLACE</h2>
+	<p>Lorem ipsum dolor sit amet,<br>
+consectetuer adipiscing elit, sed<br>
+diam nonummy nibh euismod tincidunt<br>
+ut laoreet dolore magna aliquam<br>
+erat volutpat. </p>
+	</div>		
+
+<img class="sma" id="sma1" src="images/sa1.png" >
+<img class="sma" id="sma2" src="images/sa2.png" >
+
+
+<img class="sma" id="sma3" src="images/sa3.png" >
+<img class="sma" id="sma4" src="images/sa4.png" >
+<img class="sma" id="sma5" src="images/sa5.png" >
+
+
+<img class="sma" id="sma6" src="images/sa7.png" >
+<img class="sma" id="sma7" src="images/sa6.png" >
+<img class="sma" id="sma8" src="images/sa8.png" >
+
+<img class="sma" id="sma9" src="images/sa9.png"  >
+<img class="sma" id="sma10" src="images/sa10.png">
+
+
+</div>
+
+<section id="prefooter">
+	<img id="clogo" src="images/logo_c.png"  data-300-end="opacity:0; margin-top:-20%" data-150-end="opacity:.3; margin-top:0%;" data-100-end="opacity:1; margin-top:5%;">
+	<img id="prefootph" src="images/ph3.png" data-300-end="opacity:0;" data-100-end="opacity:1;" >
+</section>
+
+	<footer>
+	<h2 align="center">DESIGN IS NOT JUST WHAT IT LOOKS LIKE AND<br>
+FEELS LIKE. DESIGN IS HOW IT WORKS.</h2>
+	</footer>
+	<script type="text/javascript" src="skrollr.stylesheets.min.js"></script>
+	<script type="text/javascript" src="skrollr.min.js"></script>
+	<script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,579 @@
+
+	
+	.wrapper {
+	display:block;
+	width:900px;
+	height:2500px;
+	margin: auto auto;
+	margin-top:-60px;
+}
+
+.wrapper img {
+	
+}
+ 
+.content {
+	position:absolute;
+	color:#d20000;
+} 
+#sp1 {
+	position:absolute; margin-top:1850px;
+	background-image: url("images/sp1.png");
+}
+
+#sp2 {
+	position:absolute; margin-top:1100px; margin-left:550px;
+	background-image: url("images/sp2.png");
+}
+
+#sp3 {
+	background-image: url("images/bulb.png");
+	position:absolute;
+  z-index:2;
+  margin-top:-80px;
+  margin-left:-32px;
+    
+}
+
+footer {
+	color:#d20000;
+}
+
+#prefooter {
+	display:flex;
+	display:-webkit-flex;
+	justify-content:center;
+	-webkit-justify-content:center;
+}
+
+.sprite {
+  width: 350px;
+  height: 362px;
+  margin: 2% auto;
+  
+  animation: play 1.5s steps(8) infinite;
+}
+
+@keyframes play {
+    100% { background-position: -2800px; }
+}
+
+
+		
+div.sprite1 {
+            
+            width: 28%;
+/*            Change this to what ever value you desire*/
+            height:0;
+            padding-bottom: 38%;
+            
+/*            Add the sprite sheet here, must be on a staright line*/
+            background-position: 0 0;
+            background-size: 200%;
+/*            I have 18 sprites in the sheet thus it's 1800%, if it was 4 you'd use 400% and so on*/
+            display: block;
+			animation: play1 3.5s steps(2) infinite;
+        }
+
+@keyframes play1 {
+            100% {
+                background-position: 200% 0;
+            }
+        }
+	
+
+svg {
+	opacity:1;
+}	
+
+#svg1 {
+	position:absolute; margin-left:275px; margin-top:50px; z-index:-5;opacity:1; 
+    -skrollr-animation-name:a1;
+}
+
+@-skrollr-keyframes a1 {
+    500 {
+        opacity:0;
+    }
+
+    600 {
+        opacity:1;
+    }
+}
+	
+#svg2 {
+	position:absolute; margin-left:20px; margin-top:275px; z-index:-5;
+    -skrollr-animation-name:a2;
+}
+
+@-skrollr-keyframes a2 {
+    850 {
+        opacity:0;
+    }
+
+    950 {
+        opacity:1;
+    }
+}	
+
+#svg3 {
+	position:absolute; margin-left:20px; margin-top:520px; z-index:-5;
+    -skrollr-animation-name:a3;
+}
+
+@-skrollr-keyframes a3 {
+    850 {
+        opacity:0;
+    }
+
+    950 {
+        opacity:1;
+    }
+}	
+	
+#svg4 {
+	position:absolute; margin-left:275px; margin-top:1300px; z-index:-5;
+    -skrollr-animation-name:a4;
+}
+
+@-skrollr-keyframes a4 {
+    1500 {
+        opacity:0;
+    }
+
+    1600 {
+        opacity:1;
+    }
+}	
+
+#svg5 {
+	 position:absolute; margin-left:270px; margin-top:2100px; z-index:-5;
+    -skrollr-animation-name:a5;
+}
+
+@-skrollr-keyframes a5 {
+    2400 {
+        opacity:0;
+    }
+
+    2500 {
+        opacity:1;
+    }
+}	
+
+#set1{
+	 -skrollr-animation-name:a6;
+}
+
+@-skrollr-keyframes a6 {
+    550 {
+        opacity:0;
+    }
+
+    650 {
+        opacity:1;
+    }
+}
+
+#set2 {
+	-skrollr-animation-name:a7;
+}
+@-skrollr-keyframes a7 {
+    850 {
+        opacity:0;
+    }
+
+    950 {
+        opacity:1;
+    }
+}
+
+#sp2 {
+	-skrollr-animation-name:a8;
+}
+@-skrollr-keyframes a8 {
+    1450 {
+        opacity:0;
+    }
+
+    1550 {
+        opacity:1;
+    }
+}
+
+#sp1 {
+	-skrollr-animation-name:a9;
+}
+@-skrollr-keyframes a9 {
+    750-end {
+        opacity:0;
+    }
+
+    550-end {
+        opacity:1;
+    }
+}
+
+#sma1 {
+	-skrollr-animation-name:a10;
+}
+@-skrollr-keyframes a10 {
+    600 {
+        opacity:0; transform: scale(.2);
+    }
+
+    650 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma2 {
+	-skrollr-animation-name:a11;
+}
+@-skrollr-keyframes a11 {
+    620 {
+        opacity:0; transform: scale(.2);
+    }
+
+    670 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma3 {
+	-skrollr-animation-name:a12;
+}
+@-skrollr-keyframes a12 {
+    990 {
+        opacity:0; transform: scale(.2);
+    }
+
+    1010 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma4 {
+	-skrollr-animation-name:a13;
+}
+@-skrollr-keyframes a13 {
+    995 {
+        opacity:0; transform: scale(.2);
+    }
+
+    1015 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma5 {
+	-skrollr-animation-name:a14;
+}
+@-skrollr-keyframes a14 {
+    1000 {
+        opacity:0; transform: scale(.2);
+    }
+
+    1020 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma6 {
+	-skrollr-animation-name:a15;
+}
+@-skrollr-keyframes a15 {
+    1600 {
+        opacity:0; transform: scale(.2);
+    }
+
+    1650 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma6 {
+	-skrollr-animation-name:a16;
+}
+@-skrollr-keyframes a16 {
+    1550 {
+        opacity:0; transform: scale(.2);
+    }
+
+    1600 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma7 {
+	-skrollr-animation-name:a17;
+}
+@-skrollr-keyframes a17 {
+    1650 {
+        opacity:0; transform: scale(.2);
+    }
+
+    1700 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma8 {
+	-skrollr-animation-name:a18;
+}
+@-skrollr-keyframes a18 {
+    1650 {
+        opacity:0; transform: scale(.2);
+    }
+
+    1700 {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma9 {
+	-skrollr-animation-name:a19;
+}
+@-skrollr-keyframes a19 {
+    550-end {
+        opacity:0; transform: scale(.2);
+    }
+
+    520-end {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#sma10 {
+	-skrollr-animation-name:a20;
+}
+@-skrollr-keyframes a20 {
+    510-end {
+        opacity:0; transform: scale(.2);
+    }
+
+    490-end {
+        opacity:1; transform: scale(1);
+    }
+}
+
+#t1 {
+	-skrollr-animation-name:a21;
+}
+@-skrollr-keyframes a21 {
+    475 {
+        opacity:0; 
+    }
+
+    580 {
+        opacity:1; 
+    }
+}
+
+#t2 {
+	-skrollr-animation-name:a22;
+}
+@-skrollr-keyframes a22 {
+    1000 {
+        opacity:0; 
+    }
+
+    1100 {
+        opacity:1; 
+    }
+}
+
+#t3 {
+	-skrollr-animation-name:a23;
+}
+@-skrollr-keyframes a23 {
+    1650 {
+        opacity:0; 
+    }
+
+    1850 {
+        opacity:1; 
+    }
+}
+
+#t4 {
+	-skrollr-animation-name:a24;
+}
+@-skrollr-keyframes a24 {
+    600-end {
+        opacity:0; 
+    }
+
+    400-end {
+        opacity:1; 
+    }
+}
+
+
+
+		
+
+#set1 {
+	position:absolute; margin-top:75px; margin-left:475px; z-index:2;
+}
+
+#set1 img {
+	width:350px;
+}
+
+#set2 {
+	position:absolute; margin-top:500px;
+}
+
+#set2 img{
+	margin-left:80px; margin-top:30px; width:300px;
+}
+
+#sma1{
+	position:absolute; margin-left:520px;
+}
+
+#sma2{
+	position:absolute; margin-left:620px; margin-top:10px;
+}
+
+#sma3{
+	position:absolute; margin-left:100px; margin-top:450px;
+}
+
+#sma4{
+	position:absolute; margin-left:40px; margin-top:600px; width:100px;
+}
+
+#sma5{
+	position:absolute; margin-left:210px; margin-top:480px; width:100px;
+}
+
+#sma6{
+	position:absolute; margin-left:575px; margin-top:1080px;
+}
+
+#sma7 {
+	position:absolute; margin-left:650px; margin-top:1090px; 
+}
+
+#sma8{
+	position:absolute; margin-left:725px; margin-top:1090px; width:60px;	
+}
+
+#sma9{
+	position:absolute; margin-left:0px; margin-top:1850px; width:75px;
+}
+
+#sma10{
+	position:absolute; margin-left:200px; margin-top:1850px; width:75px;
+}
+
+#t1{
+	margin-top:40px;
+}
+
+#t2{
+	margin-top:700px; margin-left:595px;
+}
+
+#t3{
+	margin-top:1460px;
+}
+
+#t4{
+	margin-top:2020px; margin-left:595px;
+}
+
+
+body{
+	padding:0%;
+	margin:0 0;
+	font-family: 'Oswald', sans-serif;	
+}
+
+p{
+	font-family: 'PT Mono';
+	color: black;
+}
+
+header{
+	height:500px;
+	background-color:#d40000;
+	color:white;
+}
+
+header ul{
+	list-style: none;
+	
+	font-family: 'PT Mono';
+}	
+
+header ul li {
+	
+	display: inline;
+	margin-left:20px;
+}
+
+header img {
+	width:75px;
+	height:75px;
+}
+
+#navbar {
+	display:flex;
+	display: -webkit-flex;
+	-webkit-justify-content:space-around;
+	justify-content:space-around;
+}
+
+header h1{
+	line-height: 97%;
+	
+}
+
+header h1{
+	font-size:500%;
+}
+
+header p{
+	margin-top:-4%;
+	color:black;
+	font-size:105%;
+}
+
+#phonesection {
+	height:400px;
+}
+.top {
+  position:absolute;
+  z-index:3;
+  margin-top:-10%;
+  left:0;
+  margin-left:30%;
+ }
+ 
+ .middle {
+  position:absolute;
+  z-index:2;
+  margin-top:-10%;
+  left:0;
+  margin-left:48%;
+  }
+
+.bottom {
+  position:absolute;
+  z-index:1;
+  margin-top:-10%;
+  left:0;
+  margin-left:30%;
+  }
+  
+  #clogo {
+  position:absolute;
+  z-index:1;
+  left:0;
+  margin-left:45%;
+  width:130px;
+  }
+  
