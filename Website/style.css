@@ -1,12 +1,18 @@
 
+header a {
+	text-decoration:none;
+	color:white;
+	
+}
 	
 	.wrapper {
 	display:block;
 	width:900px;
-	height:2500px;
+	height:1950px;
 	margin: auto auto;
 	margin-top:-60px;
 }
+
 
 .wrapper img {
 	
@@ -17,12 +23,12 @@
 	color:#d20000;
 } 
 #sp1 {
-	position:absolute; margin-top:1850px;
+	position:absolute; margin-top:1350px;
 	background-image: url("images/sp1.png");
 }
 
 #sp2 {
-	position:absolute; margin-top:1100px; margin-left:550px;
+	position:absolute; margin-top:900px; margin-left:550px;
 	background-image: url("images/sp2.png");
 }
 
@@ -132,31 +138,31 @@ svg {
 }	
 	
 #svg4 {
-	position:absolute; margin-left:275px; margin-top:1300px; z-index:-5;
+	position:absolute; margin-left:195px; margin-top:1150px; z-index:-5;
     -skrollr-animation-name:a4;
 }
 
 @-skrollr-keyframes a4 {
-    1500 {
+    1250 {
         opacity:0;
     }
 
-    1600 {
+    1380 {
         opacity:1;
     }
 }	
 
 #svg5 {
-	 position:absolute; margin-left:270px; margin-top:2100px; z-index:-5;
+	 position:absolute; margin-left:130px; margin-top:1600px; z-index:-5;
     -skrollr-animation-name:a5;
 }
 
 @-skrollr-keyframes a5 {
-    2400 {
+    2000 {
         opacity:0;
     }
 
-    2500 {
+    2200 {
         opacity:1;
     }
 }	
@@ -205,11 +211,11 @@ svg {
 	-skrollr-animation-name:a9;
 }
 @-skrollr-keyframes a9 {
-    750-end {
+    1850{
         opacity:0;
     }
 
-    550-end {
+    2080 {
         opacity:1;
     }
 }
@@ -387,11 +393,11 @@ svg {
 	-skrollr-animation-name:a23;
 }
 @-skrollr-keyframes a23 {
-    1650 {
+    1580 {
         opacity:0; 
     }
 
-    1850 {
+    1780 {
         opacity:1; 
     }
 }
@@ -400,16 +406,47 @@ svg {
 	-skrollr-animation-name:a24;
 }
 @-skrollr-keyframes a24 {
-    600-end {
+    1800 {
         opacity:0; 
     }
 
-    400-end {
+    1980 {
         opacity:1; 
     }
 }
 
+#prefootph {
+	-skrollr-animation-name:a25;
+}
+@-skrollr-keyframes a25 {
+    750-end {
+        opacity:0; 
+    }
 
+    550-end {
+        opacity:1; 
+    }
+}
+
+#clogo {
+	-skrollr-animation-name:a26;
+}
+@-skrollr-keyframes a26 {
+    750-end {
+        opacity:0; 
+		margin-top:-20%;
+    }
+    
+	600-end {
+		opacity:.3; 
+		margin-top:0%;
+	}
+	
+    550-end {
+        opacity:1; 
+		margin-top:5%;
+    }
+}
 
 		
 
@@ -450,39 +487,40 @@ svg {
 }
 
 #sma6{
-	position:absolute; margin-left:575px; margin-top:1080px;
+	position:absolute; margin-left:575px; margin-top:880px;
 }
 
 #sma7 {
-	position:absolute; margin-left:650px; margin-top:1090px; 
+	position:absolute; margin-left:650px; margin-top:890px; 
 }
 
 #sma8{
-	position:absolute; margin-left:725px; margin-top:1090px; width:60px;	
+	position:absolute; margin-left:725px; margin-top:890px; width:60px;	
 }
 
 #sma9{
-	position:absolute; margin-left:0px; margin-top:1850px; width:75px;
+	position:absolute; margin-left:0px; margin-top:1350px; width:75px;
 }
 
 #sma10{
-	position:absolute; margin-left:200px; margin-top:1850px; width:75px;
+	position:absolute; margin-left:200px; margin-top:1350px; width:75px;
 }
 
 #t1{
-	margin-top:40px;
+	margin-top:90px;
 }
 
 #t2{
-	margin-top:700px; margin-left:595px;
+	margin-top:620px; margin-left:610px;
 }
 
 #t3{
-	margin-top:1460px;
+	margin-top:980px;
+	margin-left:190px;
 }
 
 #t4{
-	margin-top:2020px; margin-left:595px;
+	margin-top:1480px; margin-left:595px;
 }
 
 
@@ -505,12 +543,10 @@ header{
 
 header ul{
 	list-style: none;
-	
 	font-family: 'PT Mono';
 }	
 
 header ul li {
-	
 	display: inline;
 	margin-left:20px;
 }
@@ -527,19 +563,23 @@ header img {
 	justify-content:space-around;
 }
 
+#navbar img {
+position:absolute; width:150px; height:150px; margin-top:-20px; }
+
 header h1{
-	line-height: 97%;
+	line-height: 120%;
 	
 }
 
 header h1{
-	font-size:500%;
+	margin-top:8%;
+	font-size:400%;
 }
 
 header p{
-	margin-top:-4%;
+	margin-top:8%;
 	color:black;
-	font-size:105%;
+	font-size:100%;
 }
 
 #phonesection {
@@ -577,3 +617,31 @@ header p{
   width:130px;
   }
   
+  #cont {
+	  padding:2%;
+	  height:350px;
+	display:flex;
+	justify-content: space-around;
+	display: -webkit-flex;    /* NEW - Chrome */
+   -webkit-justify-content: space-around;
+}
+
+#medialink {
+	display: flex;
+	justify-content: center;
+	display: -webkit-flex;    /* NEW - Chrome */
+   -webkit-justify-content: center;
+}  
+
+#medialink img {
+	width: 30px;
+	margin-left:30px;
+}
+
+#legends {
+margin-top: -1%;	
+}
+
+#legends img {
+	width:35px;
+}

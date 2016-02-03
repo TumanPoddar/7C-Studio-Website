@@ -1,3 +1,30 @@
+#navbar img{
+	margin-left:-40px;
+}
+
+
+	  #clogo {
+  position:absolute;
+  margin-top:12%;
+  z-index:1;
+  left:0;
+  margin-left:40%;
+  width:100px;
+	  }
+#cli {
+	position:absolute;
+	opacity:0;
+}
+header a {
+	text-decoration:none;
+	color:white;
+	
+}
+
+.wrapper {
+	margin-top:-8%;
+}
+
 svg {
 	position:absolute;
 	opacity:0;
@@ -68,9 +95,9 @@ header ul{
 }	
 
 header ul li {
-	
+	font-size:70%;
 	display: inline;
-	margin-left:20px;
+	margin-left:10px;
 }
 
 header img {
@@ -85,9 +112,11 @@ header img {
 	justify-content:space-around;
 }
 
+
 header h1{
-	line-height: 97%;
-	font-size:300%;
+	margin-top: 60px;
+	line-height: 150%;
+	font-size:200%;
 	
 }
 
@@ -101,38 +130,53 @@ header p{
 	height:400px;
 }
 .top {
-	width:60%;
+	width:70%;
   position:absolute;
   z-index:3;
   margin-top:-10%;
   left:0;
-  margin-left:20%;
+  margin-left:14%;
  }
  
  .middle {
-	 
+  opacity:0;	
   position:absolute;
   z-index:2;
   margin-top:-10%;
   left:0;
-  margin-left:35%;
+  margin-left:205%;
   }
 
 .bottom {
- width:62%;
+ width:73%;
   position:absolute;
   z-index:1;
   margin-top:-10%;
   left:0;
-  margin-left:20%;
+  margin-left:14%;
   }
   
-  #clogo {
-  position:absolute;
-  z-index:1;
-  left:0;
-  margin-left:45%;
-  width:130px;
-  }
  
+  
+#prefooter {
+	display:flex;
+	display:-webkit-flex;
+	justify-content:center;
+	-webkit-justify-content:center;
+}
+
+#prefootph {
+	width:80%;
+	margin: auto auto;
+}
+
+#medialink img {
+	width: 30px;
+	margin-left:30px;
+	margin-top:2%;
+}
+
+#legends img {
+	width:35px;
+}
  
