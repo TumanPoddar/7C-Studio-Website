@@ -198,11 +198,11 @@ svg {
 	-skrollr-animation-name:a8;
 }
 @-skrollr-keyframes a8 {
-    1450 {
+    1350 {
         opacity:0;
     }
 
-    1550 {
+    1450 {
         opacity:1;
     }
 }
@@ -285,28 +285,17 @@ svg {
     }
 }
 
-#sma6 {
-	-skrollr-animation-name:a15;
-}
-@-skrollr-keyframes a15 {
-    1600 {
-        opacity:0; transform: scale(.2);
-    }
 
-    1650 {
-        opacity:1; transform: scale(1);
-    }
-}
 
 #sma6 {
 	-skrollr-animation-name:a16;
 }
 @-skrollr-keyframes a16 {
-    1550 {
+    1400 {
         opacity:0; transform: scale(.2);
     }
 
-    1600 {
+    1450 {
         opacity:1; transform: scale(1);
     }
 }
@@ -315,11 +304,11 @@ svg {
 	-skrollr-animation-name:a17;
 }
 @-skrollr-keyframes a17 {
-    1650 {
+    1400 {
         opacity:0; transform: scale(.2);
     }
 
-    1700 {
+    1500 {
         opacity:1; transform: scale(1);
     }
 }
@@ -328,11 +317,11 @@ svg {
 	-skrollr-animation-name:a18;
 }
 @-skrollr-keyframes a18 {
-    1650 {
+    1450 {
         opacity:0; transform: scale(.2);
     }
 
-    1700 {
+    1500 {
         opacity:1; transform: scale(1);
     }
 }
@@ -393,11 +382,11 @@ svg {
 	-skrollr-animation-name:a23;
 }
 @-skrollr-keyframes a23 {
-    1580 {
+    1450 {
         opacity:0; 
     }
 
-    1780 {
+    1580 {
         opacity:1; 
     }
 }
@@ -527,11 +516,11 @@ svg {
 body{
 	padding:0%;
 	margin:0 0;
-	font-family: 'Oswald', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 }
 
 p{
-	font-family: 'PT Mono';
+	font-family: 'Open Sans', sans-serif;
 	color: black;
 }
 
@@ -543,7 +532,7 @@ header{
 
 header ul{
 	list-style: none;
-	font-family: 'PT Mono';
+	font-family: 'Open Sans', sans-serif;
 }	
 
 header ul li {
@@ -573,7 +562,7 @@ header h1{
 
 header h1{
 	margin-top:8%;
-	font-size:400%;
+	font-size:250%;
 }
 
 header p{

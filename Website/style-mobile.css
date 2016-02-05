@@ -70,7 +70,7 @@ svg {
 body{
 	padding:0%;
 	margin:0 0;
-	font-family: 'Oswald', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	text-align:center;
 }
 
@@ -78,7 +78,7 @@ h2{
 	color:#d20000;
 }
 p{
-	font-family: 'PT Mono';
+	font-family: 'Open Sans', sans-serif;
 	color: black;
 }
 
@@ -91,7 +91,7 @@ header{
 header ul{
 	list-style: none;
 	
-	font-family: 'PT Mono';
+	font-family: 'Open Sans', sans-serif;
 }	
 
 header ul li {
