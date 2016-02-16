@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "7cstudio": {
+            "applicationId": "1lKg95RiqG2w3Rbl9YoilVBjYvGsyO5FsBhZmctP", 
+            "masterKey": "CtXraJpV8ofMnDQsMc8MyJtJn01QuWOUBDumXqkh"
+        }, 
+        "_default": {
+            "link": "7cstudio"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.4"
+    }
+}
